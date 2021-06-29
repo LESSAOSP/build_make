@@ -591,6 +591,10 @@ function print_lunch_menu()
 {
     local uname=$(uname)
     echo
+    echo "You're Building LESSAOSP Custom Rom based on AOSP. Wait few Secons Process Starting...."
+    echo
+    echo "Join our group at https://t.me/LESSAOSP"
+    echo
     echo "You're building on" $uname
     echo
     echo "Lunch menu... pick a combo:"
@@ -692,7 +696,7 @@ function lunch()
 
     if ! check_product $product
     then
-        # if we can't find a product, try to grab it off the PixelExperience GitHub
+        # if we can't find a product, try to grab it off the LESSAOSP GitHub
         T=$(gettop)
         cd $T > /dev/null
         vendor/aosp/build/tools/roomservice.py $product
